@@ -28,20 +28,28 @@ public class ScaleController : MonoBehaviour
         DebugRaycastForward();
         _currentObject = GetObjectInFrontOfCamera();
 
-        if (Input.GetKeyDown("1") || Input.GetKeyDown("2") || Input.GetKeyDown("3"))
+        if (Input.GetKeyDown("1"))
         {
-            
-            Debug.Log($"Scale set to small");
-            _currentObject.transform.localScale = new Vector3(scaleSmall, scaleSmall, scaleSmall);
-
+            if (_currentObject != null)
+            {
+                Debug.Log($"Scale set to small");
+                _currentObject.transform.localScale = new Vector3(scaleSmall, scaleSmall, scaleSmall);
+            }
         }else if (Input.GetKeyDown("2"))
         {
-            Debug.Log($"Scale set to normal");
-            _currentObject.transform.localScale = new Vector3(scaleNormal, scaleNormal, scaleNormal);
+            if (_currentObject != null)
+            {
+                Debug.Log($"Scale set to normal");
+                _currentObject.transform.localScale = new Vector3(scaleNormal, scaleNormal, scaleNormal);
+            }
+            
         }else if (Input.GetKeyDown("3"))
         {
-            Debug.Log($"Scale set to big");
-            _currentObject.transform.localScale = new Vector3(scaleLarge, scaleLarge, scaleLarge);
+            if (_currentObject != null)
+            {
+                Debug.Log($"Scale set to big");
+                _currentObject.transform.localScale = new Vector3(scaleLarge, scaleLarge, scaleLarge);
+            }
         }
     }
 
