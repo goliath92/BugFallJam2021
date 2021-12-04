@@ -28,8 +28,9 @@ public class ScaleController : MonoBehaviour
         DebugRaycastForward();
         _currentObject = GetObjectInFrontOfCamera();
 
-        if (Input.GetKeyDown("1"))
+        if (Input.GetKeyDown("1") || Input.GetKeyDown("2") || Input.GetKeyDown("3"))
         {
+            
             Debug.Log($"Scale set to small");
             _currentObject.transform.localScale = new Vector3(scaleSmall, scaleSmall, scaleSmall);
 
@@ -56,7 +57,6 @@ public class ScaleController : MonoBehaviour
                 _objectIdentifierText.text = _currentObject.name;
                 return _currentObject;
             }
-            
         }
 
         _objectIdentifierText.text = "";

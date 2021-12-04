@@ -4,6 +4,7 @@
     <list default="true" id="f1cdba01-4d15-4dd4-a63c-045ec483749d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BugFallJam2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BugFallJam2021/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScaleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScaleController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,7 @@
       <updated>1638569084754</updated>
       <workItem from="1638569091983" duration="83000" />
       <workItem from="1638609867322" duration="553000" />
-      <workItem from="1638610481346" duration="4818000" />
+      <workItem from="1638610481346" duration="6618000" />
     </task>
     <servers />
   </component>
