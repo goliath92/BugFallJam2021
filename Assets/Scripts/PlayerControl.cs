@@ -16,6 +16,7 @@ public class PlayerControl : MonoBehaviour
     [Header("Values")]
     public float speed = 10f;
     public float gravity = -10;
+    public float jumpHeight = 2f;
     
     void Start()
     {
@@ -27,6 +28,20 @@ public class PlayerControl : MonoBehaviour
     {
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -1f;
+        }
+
+        velocity.y += gravity * Time.deltaTime;
+        
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
+        controller.Move(velocity * Time.deltaTime);
+        
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
