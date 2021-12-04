@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1cdba01-4d15-4dd4-a63c-045ec483749d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraMovement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScaleController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SimpleSmoothMouseLook.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BugFallJam2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BugFallJam2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Materials/Column.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Materials/Grid.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Materials/Grid2x.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Materials/Light-Gray.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Materials/Shaders/Unlit_Texture_Color.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Materials/Textures/black_grid.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Materials/Textures/blue_grid.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Materials/Textures/red_grid.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Materials/WallRun.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/README.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Scenes/Example.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Scenes/Example/Example_Model.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Scripts/Grappling Hook/SFPSC_GrapplingHook.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Scripts/Grappling Hook/SFPSC_Rope.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Scripts/SFPSC_KeyManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Scripts/SFPSC_PlayerMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Scripts/Wall Run/SFPSC_WallRun.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-    </list>
+    <list default="true" id="f1cdba01-4d15-4dd4-a63c-045ec483749d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +63,7 @@
       <workItem from="1638569091983" duration="83000" />
       <workItem from="1638609867322" duration="553000" />
       <workItem from="1638610481346" duration="1085000" />
-      <workItem from="1638617163589" duration="1025000" />
+      <workItem from="1638617163589" duration="1618000" />
     </task>
     <servers />
   </component>
