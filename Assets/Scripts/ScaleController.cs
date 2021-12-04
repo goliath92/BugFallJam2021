@@ -13,6 +13,9 @@ public class ScaleController : MonoBehaviour
     private float scaleSmall = 0.5f;
     private float scaleNormal = 1.0f;
     private float scaleLarge = 2.0f;
+    public GameObject _pickedUpObject;
+    private float pickUpDistance = 10.0f;
+    public Transform _pickedUpObjectPosition;
     
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,11 @@ public class ScaleController : MonoBehaviour
         
         DebugRaycastForward();
         _currentObject = GetObjectInFrontOfCamera();
+
+        if (_pickedUpObject != null)
+        {
+            _pickedUpObject.transform.position = _pickedUpObjectPosition.position;
+        }
 
         if (Input.GetKeyDown("1"))
         {
@@ -49,6 +57,29 @@ public class ScaleController : MonoBehaviour
             {
                 Debug.Log($"Scale set to big");
                 _currentObject.transform.localScale = new Vector3(scaleLarge, scaleLarge, scaleLarge);
+            }
+        }
+
+        //pickup
+        if (Input.GetKeyDown("e"))
+        {
+            //hand empty
+            if (_pickedUpObject == null)
+            {
+                if (_currentObject != null)
+                {
+                    Debug.Log(Vector3.Distance(_currentObject.transform.position, this.transform.position));
+                    if (Vector3.Distance(_currentObject.transform.position, this.transform.position) < pickUpDistance)
+                    {
+                        _currentObject.GetComponent<Interactable>().PickUp();
+                        _pickedUpObject = _currentObject;
+                    }
+                }
+            }
+            else
+            {
+                _currentObject.GetComponent<Interactable>().Release();
+                _pickedUpObject = null;
             }
         }
     }
