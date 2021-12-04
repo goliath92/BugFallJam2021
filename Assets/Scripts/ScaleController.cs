@@ -60,7 +60,7 @@ public class ScaleController : MonoBehaviour
             }
         }
 
-        //pickup
+        //pickup - release
         if (Input.GetKeyDown("e"))
         {
             //hand empty
@@ -82,6 +82,20 @@ public class ScaleController : MonoBehaviour
                 _pickedUpObject = null;
             }
         }
+        
+        //throw
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (_pickedUpObject != null)
+            {
+                _currentObject.GetComponent<Interactable>().Release();
+            }
+        }
+
+        
+        
+        
+        
     }
 
     public GameObject GetObjectInFrontOfCamera()
