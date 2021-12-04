@@ -5,13 +5,12 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     public CharacterController controller;
-    private bool isGrounded;
+    public bool isGrounded;
     public LayerMask groundMask;
     public Transform groundCheck;
 
     private float groundDistance = 0.4f;
-
-    Vector3 velocity;
+    public Vector3 velocity;
     
     [Header("Values")]
     public float speed = 10f;
@@ -27,7 +26,7 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
 
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance);
 
         if (isGrounded && velocity.y < 0)
         {
