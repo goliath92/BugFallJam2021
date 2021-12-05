@@ -766,6 +766,7 @@ MonoBehaviour:
   _pushForce: 10
   map: {fileID: 0}
   scaleStepSize: 0.1
+  explosionParticle: {fileID: 0}
 --- !u!54 &984128840
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1240,6 +1241,7 @@ MonoBehaviour:
   _pushForce: 10000
   map: {fileID: 0}
   scaleStepSize: 0.1
+  explosionParticle: {fileID: 4811512223213585154}
 --- !u!1 &1801545447
 GameObject:
   m_ObjectHideFlags: 0
@@ -14923,7 +14925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4811512221776337923
 Transform:
   m_ObjectHideFlags: 0
@@ -19820,7 +19822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!198 &4811512221860842608
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -63761,7 +63763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4811512222929240847
 Transform:
   m_ObjectHideFlags: 0
@@ -78325,9 +78327,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4811512223213585164}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.7899926, y: 3.05, z: -8.530007}
+  m_LocalScale: {x: 0.25000006, y: 0.25, z: 0.25000006}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4811512221860842610}
@@ -78344,8 +78346,8 @@ Transform:
   - {fileID: 4811512222909436127}
   - {fileID: 4811512221895701672}
   - {fileID: 4811512221817932362}
-  m_Father: {fileID: 5131168115637843963}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4811512223213585164
 GameObject:
@@ -78359,7 +78361,7 @@ GameObject:
   - component: {fileID: 4811512223213585154}
   - component: {fileID: 4811512223213585165}
   m_Layer: 0
-  m_Name: CosmicReversal
+  m_Name: ExplosionParticle
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -84655,7 +84657,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4811512223213585155}
   - {fileID: 5131168115963558488}
   m_Father: {fileID: 543450652120893280}
   m_RootOrder: 1
@@ -84729,7 +84730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5131168115736441910}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.2441087, y: 3.5082297, z: -23.400026}
+  m_LocalPosition: {x: 9.5, y: 3.5082297, z: -102.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -85013,7 +85014,7 @@ Transform:
   - {fileID: 8179244972372802820}
   - {fileID: 5131168115844639015}
   m_Father: {fileID: 5131168115637843963}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5131168115963558489
 GameObject:

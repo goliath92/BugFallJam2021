@@ -10,6 +10,8 @@ public class Interactable : MonoBehaviour
     
     public Transform player;
     
+    
+
     // Start is called before the first frame update
     void Start()
     {

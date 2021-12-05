@@ -21,6 +21,8 @@ public class ScaleController : MonoBehaviour
     public Transform map;
     public float scaleStepSize = 0.1f;
 
+    [SerializeField] ParticleSystem explosionParticle = null;
+
     
     
     // Start is called before the first frame update
@@ -47,14 +49,20 @@ public class ScaleController : MonoBehaviour
         {
             if (Input.GetKeyDown("1"))
             {
+                explosionParticle.transform.position = _currentObject.transform.position;
+                explosionParticle.Play();
                 Debug.Log($"Scale set to small");
                 _currentObject.GetComponent<Interactable>().SetScale(scaleSmall);
             }else if (Input.GetKeyDown("2"))
             {
+                explosionParticle.transform.position = _currentObject.transform.position;
+                explosionParticle.Play();
                 Debug.Log($"Scale set to normal");
                 _currentObject.GetComponent<Interactable>().SetScale(scaleNormal);
             }else if (Input.GetKeyDown("3"))
             {
+                explosionParticle.transform.position = _currentObject.transform.position;
+                explosionParticle.Play();
                 Debug.Log($"Scale set to big");
                 _currentObject.GetComponent<Interactable>().SetScale(scaleLarge);
             }
