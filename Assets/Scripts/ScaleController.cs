@@ -21,7 +21,7 @@ public class ScaleController : MonoBehaviour
     public Transform map;
     public float scaleStepSize = 0.1f;
 
-    [SerializeField] ParticleSystem explosionParticle = null;
+    public ParticleSystem explosionParticle = null;
 
     
     

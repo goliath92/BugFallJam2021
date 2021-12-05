@@ -9,14 +9,17 @@ public class Interactable : MonoBehaviour
     private float changeScaleRevertTime = 5.0f;
     
     public Transform player;
-    
-    
+    private ParticleSystem explosionParticle;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").transform;
         _rb = GetComponent<Rigidbody>();
+        explosionParticle = player.GetComponent<ScaleController>().explosionParticle;
+
     }
 
     public void PickUp()
@@ -38,6 +41,8 @@ public class Interactable : MonoBehaviour
     {
         this.transform.localScale = new Vector3(scale, scale, scale);
         yield return new WaitForSeconds(changeScaleRevertTime);
+        explosionParticle.transform.position = this.transform.position;
+        explosionParticle.Play();
         this.transform.localScale = new Vector3(1, 1, 1);
         player.GetComponent<ScaleController>()._pickedUpObject = null;
         Release();
