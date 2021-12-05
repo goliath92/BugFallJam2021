@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1cdba01-4d15-4dd4-a63c-045ec483749d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BugFallJam2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BugFallJam2021/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScaleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScaleController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +69,7 @@
       <workItem from="1638609867322" duration="553000" />
       <workItem from="1638610481346" duration="20474000" />
       <workItem from="1638692226747" duration="1096000" />
-      <workItem from="1638693398668" duration="2397000" />
+      <workItem from="1638693398668" duration="2956000" />
     </task>
     <servers />
   </component>
