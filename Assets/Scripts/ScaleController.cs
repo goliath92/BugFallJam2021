@@ -16,6 +16,12 @@ public class ScaleController : MonoBehaviour
     public GameObject _pickedUpObject;
     private float pickUpDistance = 10.0f;
     public Transform _pickedUpObjectPosition;
+    public float _pushForce = 1000.0f;
+
+    public Transform map;
+    public float scaleStepSize = 0.1f;
+
+    
     
     // Start is called before the first frame update
     void Start()
@@ -36,29 +42,24 @@ public class ScaleController : MonoBehaviour
             _pickedUpObject.transform.position = _pickedUpObjectPosition.position;
         }
 
-        if (Input.GetKeyDown("1"))
+
+        if (_currentObject != null)
         {
-            if (_currentObject != null)
+            if (Input.GetKeyDown("1"))
             {
                 Debug.Log($"Scale set to small");
-                _currentObject.transform.localScale = new Vector3(scaleSmall, scaleSmall, scaleSmall);
-            }
-        }else if (Input.GetKeyDown("2"))
-        {
-            if (_currentObject != null)
+                _currentObject.GetComponent<Interactable>().SetScale(scaleSmall);
+            }else if (Input.GetKeyDown("2"))
             {
                 Debug.Log($"Scale set to normal");
-                _currentObject.transform.localScale = new Vector3(scaleNormal, scaleNormal, scaleNormal);
-            }
-            
-        }else if (Input.GetKeyDown("3"))
-        {
-            if (_currentObject != null)
+                _currentObject.GetComponent<Interactable>().SetScale(scaleNormal);
+            }else if (Input.GetKeyDown("3"))
             {
                 Debug.Log($"Scale set to big");
-                _currentObject.transform.localScale = new Vector3(scaleLarge, scaleLarge, scaleLarge);
+                _currentObject.GetComponent<Interactable>().SetScale(scaleLarge);
             }
         }
+        
 
         //pickup - release
         if (Input.GetKeyDown("e"))
@@ -68,8 +69,7 @@ public class ScaleController : MonoBehaviour
             {
                 if (_currentObject != null)
                 {
-                    Debug.Log(Vector3.Distance(_currentObject.transform.position, this.transform.position));
-                    if (Vector3.Distance(_currentObject.transform.position, this.transform.position) < pickUpDistance)
+                    if (_currentObject.transform.localScale.x == 0.5f && (Vector3.Distance(_currentObject.transform.position, this.transform.position) < pickUpDistance))
                     {
                         _currentObject.GetComponent<Interactable>().PickUp();
                         _pickedUpObject = _currentObject;
@@ -88,14 +88,25 @@ public class ScaleController : MonoBehaviour
         {
             if (_pickedUpObject != null)
             {
-                _currentObject.GetComponent<Interactable>().Release();
+                _pickedUpObject.GetComponent<Interactable>().Release();
+                _pickedUpObject.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * _pushForce);
+                _pickedUpObject = null;
             }
         }
-
         
-        
-        
-        
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f ) // forward
+        {
+            map.localScale = new Vector3(map.localScale.x + scaleStepSize, map.localScale.y + scaleStepSize, map.localScale.z + scaleStepSize);
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0f ) // backwards
+        {
+            if (map.localScale.x - scaleStepSize > 0)
+            {
+                map.localScale = new Vector3(map.localScale.x - scaleStepSize, map.localScale.y - scaleStepSize, map.localScale.z - scaleStepSize);
+            }
+            
+        }
+ 
     }
 
     public GameObject GetObjectInFrontOfCamera()

@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1cdba01-4d15-4dd4-a63c-045ec483749d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/ScalerAnimator.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Import/mekan_2 (1).fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Import/mekan_3.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Blue.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Copper_Black.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Physics Materials/slip.physicMaterial" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Cube.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/2.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/3.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/3/LightingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/3/ReflectionProbe-0.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene 1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ProjectileScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BugFallJam2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BugFallJam2021/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Skin.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Skin.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Physics Materials/Sticky.physicMaterial" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Physics Materials/Sticky.physicMaterial" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/LightingData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScaleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScaleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Import/Simple FPS Controller/Scripts/SFPSC_PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimpleSmoothMouseLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProjectileScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScaleController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21nFjQh3JkxlePQuPZLNHvDDD1u" />
@@ -66,7 +92,7 @@
       <updated>1638569084754</updated>
       <workItem from="1638569091983" duration="83000" />
       <workItem from="1638609867322" duration="553000" />
-      <workItem from="1638610481346" duration="14065000" />
+      <workItem from="1638610481346" duration="20200000" />
     </task>
     <servers />
   </component>
