@@ -13,6 +13,15 @@ public class ScaleController : MonoBehaviour
     private float scaleSmall = 0.5f;
     private float scaleNormal = 1.0f;
     private float scaleLarge = 2.0f;
+    public GameObject _pickedUpObject;
+    private float pickUpDistance = 10.0f;
+    public Transform _pickedUpObjectPosition;
+    public float _pushForce = 1000.0f;
+
+    public Transform map;
+    public float scaleStepSize = 0.1f;
+
+    
     
     // Start is called before the first frame update
     void Start()
@@ -28,29 +37,76 @@ public class ScaleController : MonoBehaviour
         DebugRaycastForward();
         _currentObject = GetObjectInFrontOfCamera();
 
-        if (Input.GetKeyDown("1"))
+        if (_pickedUpObject != null)
         {
-            if (_currentObject != null)
+            _pickedUpObject.transform.position = _pickedUpObjectPosition.position;
+        }
+
+
+        if (_currentObject != null)
+        {
+            if (Input.GetKeyDown("1"))
             {
                 Debug.Log($"Scale set to small");
-                _currentObject.transform.localScale = new Vector3(scaleSmall, scaleSmall, scaleSmall);
-            }
-        }else if (Input.GetKeyDown("2"))
-        {
-            if (_currentObject != null)
+                _currentObject.GetComponent<Interactable>().SetScale(scaleSmall);
+            }else if (Input.GetKeyDown("2"))
             {
                 Debug.Log($"Scale set to normal");
-                _currentObject.transform.localScale = new Vector3(scaleNormal, scaleNormal, scaleNormal);
-            }
-            
-        }else if (Input.GetKeyDown("3"))
-        {
-            if (_currentObject != null)
+                _currentObject.GetComponent<Interactable>().SetScale(scaleNormal);
+            }else if (Input.GetKeyDown("3"))
             {
                 Debug.Log($"Scale set to big");
-                _currentObject.transform.localScale = new Vector3(scaleLarge, scaleLarge, scaleLarge);
+                _currentObject.GetComponent<Interactable>().SetScale(scaleLarge);
             }
         }
+        
+
+        //pickup - release
+        if (Input.GetKeyDown("e"))
+        {
+            //hand empty
+            if (_pickedUpObject == null)
+            {
+                if (_currentObject != null)
+                {
+                    if (_currentObject.transform.localScale.x == 0.5f && (Vector3.Distance(_currentObject.transform.position, this.transform.position) < pickUpDistance))
+                    {
+                        _currentObject.GetComponent<Interactable>().PickUp();
+                        _pickedUpObject = _currentObject;
+                    }
+                }
+            }
+            else
+            {
+                _currentObject.GetComponent<Interactable>().Release();
+                _pickedUpObject = null;
+            }
+        }
+        
+        //throw
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (_pickedUpObject != null)
+            {
+                _pickedUpObject.GetComponent<Interactable>().Release();
+                _pickedUpObject.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * _pushForce);
+                _pickedUpObject = null;
+            }
+        }
+        
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f ) // forward
+        {
+            map.localScale = new Vector3(map.localScale.x + scaleStepSize, map.localScale.y + scaleStepSize, map.localScale.z + scaleStepSize);
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0f ) // backwards
+        {
+            if (map.localScale.x - scaleStepSize > 0)
+            {
+                map.localScale = new Vector3(map.localScale.x - scaleStepSize, map.localScale.y - scaleStepSize, map.localScale.z - scaleStepSize);
+            }
+            
+        }
+ 
     }
 
     public GameObject GetObjectInFrontOfCamera()

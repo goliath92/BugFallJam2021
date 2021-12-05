@@ -46,6 +46,8 @@ public class SFPSC_PlayerMovement : MonoBehaviour
     private SFPSC_WallRun wallRun;
     private SFPSC_GrapplingHook grapplingHook;
 
+    
+
     private void Start()
     {
         rb = this.GetComponent<Rigidbody>();
